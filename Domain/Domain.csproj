@@ -76,11 +76,21 @@
   <ItemGroup>
     <Compile Include="Concrete\ApplicationDbContext.cs" />
     <Compile Include="Entity\ApplicationUser.cs" />
+    <Compile Include="Migrations\201803051316361_create DB.cs" />
+    <Compile Include="Migrations\201803051316361_create DB.Designer.cs">
+      <DependentUpon>201803051316361_create DB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201803051316361_create DB.resx">
+      <DependentUpon>201803051316361_create DB.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
