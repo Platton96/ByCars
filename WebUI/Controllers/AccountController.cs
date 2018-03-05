@@ -9,7 +9,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using WebUI.Models;
-
+using Domain.Entity;
 namespace WebUI.Controllers
 {
     [Authorize]
