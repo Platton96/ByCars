@@ -80,6 +80,10 @@
     <Compile Include="Migrations\201803051316361_create DB.Designer.cs">
       <DependentUpon>201803051316361_create DB.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201803060831433_add Nick for user.cs" />
+    <Compile Include="Migrations\201803060831433_add Nick for user.Designer.cs">
+      <DependentUpon>201803060831433_add Nick for user.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -90,6 +94,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201803051316361_create DB.resx">
       <DependentUpon>201803051316361_create DB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803060831433_add Nick for user.resx">
+      <DependentUpon>201803060831433_add Nick for user.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
