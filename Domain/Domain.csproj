@@ -76,6 +76,10 @@
   <ItemGroup>
     <Compile Include="Concrete\ApplicationDbContext.cs" />
     <Compile Include="Entity\ApplicationUser.cs" />
+    <Compile Include="Entity\BuyingCar.cs" />
+    <Compile Include="Entity\Car.cs" />
+    <Compile Include="Entity\OwnerCar.cs" />
+    <Compile Include="Entity\SearchQuery.cs" />
     <Compile Include="Migrations\201803051316361_create DB.cs" />
     <Compile Include="Migrations\201803051316361_create DB.Designer.cs">
       <DependentUpon>201803051316361_create DB.cs</DependentUpon>
