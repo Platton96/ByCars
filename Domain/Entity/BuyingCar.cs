@@ -10,7 +10,7 @@ namespace Domain.Entity
     {
         public int Id { get; set; }
         public Car Car { get; set; }
-        public ApplicationUser Buyer { get; set; }
+        public ApplicationUser ApplicationUser { get; set; }
         public OwnerCar OwnerCar {get; set;}
     }
 }
