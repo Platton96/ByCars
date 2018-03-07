@@ -8,12 +8,12 @@ namespace Domain.Entity
         public string Model { get; set; }
         public int Year { get; set; }
         public decimal Cost { get; set; }
-        public Transmission Transmission { get; set; }
-        public EnginesType EnginesType{ get; set; }
-        public int Mileage { get; set; }
-        public int EngineCapacity { get; set; }
+        public Transmission? Transmission { get; set; }
+        public EnginesType? EnginesType{ get; set; }
+        public int? Mileage { get; set; }
+        public int? EngineCapacity { get; set; }
         public string CarBody { get; set; }
-        public DriveUnit DriveUnit { get; set; }
+        public DriveUnit? DriveUnit { get; set; }
     }
     public enum EnginesType
     {

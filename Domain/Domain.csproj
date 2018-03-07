@@ -92,6 +92,10 @@
     <Compile Include="Migrations\201803061548373_AddNewEntities.Designer.cs">
       <DependentUpon>201803061548373_AddNewEntities.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201803070823250_Add field NewOffer into BuingCar.cs" />
+    <Compile Include="Migrations\201803070823250_Add field NewOffer into BuingCar.Designer.cs">
+      <DependentUpon>201803070823250_Add field NewOffer into BuingCar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -108,6 +112,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201803061548373_AddNewEntities.resx">
       <DependentUpon>201803061548373_AddNewEntities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803070823250_Add field NewOffer into BuingCar.resx">
+      <DependentUpon>201803070823250_Add field NewOffer into BuingCar.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
