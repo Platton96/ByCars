@@ -2,6 +2,8 @@
 using Ninject;
 using System.Web.Routing;
 using System.Web.Mvc;
+using Domain.Abstract;
+using Domain.Concrete;
 
 
 namespace WebUI.Infastructure
@@ -34,6 +36,10 @@ namespace WebUI.Infastructure
          }.AsQueryable());
              ninjectKernel.Bind<IUserRepository>().ToConstant(mock.Object);*/
             //ninjectKernel.Bind<IUserRepository>().To<EFProductRepository>();
+            ninjectKernel.Bind<ICarRepository>().To<EFCarRepository>();
+            ninjectKernel.Bind<IBuyingCarRepository>().To<EFBuyingCarRepository>();
+            ninjectKernel.Bind<IOwnerCarRepository>().To<EFOwnerCarRepository>();
+            ninjectKernel.Bind<ISearchQueryRepository>().To<EFSearchQueryRepository>();
         }
     }
 }

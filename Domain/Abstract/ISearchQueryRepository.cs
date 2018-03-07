@@ -5,6 +5,6 @@ namespace Domain.Abstract
 {
     public interface ISearchQueryRepository
     {
-        IQueryable<SearchQuery> SearchQuries { get; }
+        IQueryable<SearchQuery> SearchQueries { get; }
     }
 }

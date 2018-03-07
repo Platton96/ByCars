@@ -79,6 +79,10 @@
     <Compile Include="Abstract\IOwnerCarRepository.cs" />
     <Compile Include="Abstract\ISearchQueryRepository.cs" />
     <Compile Include="Concrete\ApplicationDbContext.cs" />
+    <Compile Include="Concrete\EFBuyingCarRepository.cs" />
+    <Compile Include="Concrete\EFCarRepository.cs" />
+    <Compile Include="Concrete\EFOwnerCarRepository.cs" />
+    <Compile Include="Concrete\EFSearchQueryRepository.cs" />
     <Compile Include="Entity\ApplicationUser.cs" />
     <Compile Include="Entity\BuyingCar.cs" />
     <Compile Include="Entity\Car.cs" />
