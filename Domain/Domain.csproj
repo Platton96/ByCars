@@ -74,6 +74,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\IBuyingCarRepository.cs" />
+    <Compile Include="Abstract\ICarRepository.cs" />
+    <Compile Include="Abstract\IOwnerCarRepository.cs" />
+    <Compile Include="Abstract\ISearchQueryRepository.cs" />
     <Compile Include="Concrete\ApplicationDbContext.cs" />
     <Compile Include="Entity\ApplicationUser.cs" />
     <Compile Include="Entity\BuyingCar.cs" />
@@ -117,5 +121,6 @@
       <DependentUpon>201803070823250_Add field NewOffer into BuingCar.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
