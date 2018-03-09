@@ -104,6 +104,10 @@
     <Compile Include="Migrations\201803070823250_Add field NewOffer into BuingCar.Designer.cs">
       <DependentUpon>201803070823250_Add field NewOffer into BuingCar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201803090906178_add field UrlImg for Car.cs" />
+    <Compile Include="Migrations\201803090906178_add field UrlImg for Car.Designer.cs">
+      <DependentUpon>201803090906178_add field UrlImg for Car.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -123,6 +127,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201803070823250_Add field NewOffer into BuingCar.resx">
       <DependentUpon>201803070823250_Add field NewOffer into BuingCar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803090906178_add field UrlImg for Car.resx">
+      <DependentUpon>201803090906178_add field UrlImg for Car.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />
