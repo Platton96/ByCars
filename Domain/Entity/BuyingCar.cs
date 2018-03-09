@@ -8,5 +8,6 @@ namespace Domain.Entity
         public ApplicationUser ApplicationUser { get; set; }
         public OwnerCar OwnerCar {get; set;}
         public bool NewOffer { get; set; }
+        public bool FavoriteOffer { get; set; }
     }
 }
