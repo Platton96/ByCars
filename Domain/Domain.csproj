@@ -112,6 +112,10 @@
     <Compile Include="Migrations\201803090930155_add field Favorite for buyingCar.Designer.cs">
       <DependentUpon>201803090930155_add field Favorite for buyingCar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201803102037198_add Description for car.cs" />
+    <Compile Include="Migrations\201803102037198_add Description for car.Designer.cs">
+      <DependentUpon>201803102037198_add Description for car.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -137,6 +141,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201803090930155_add field Favorite for buyingCar.resx">
       <DependentUpon>201803090930155_add field Favorite for buyingCar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803102037198_add Description for car.resx">
+      <DependentUpon>201803102037198_add Description for car.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />

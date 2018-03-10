@@ -9,6 +9,7 @@ namespace Domain.Entity
         public string UrlImg { get; set; }
         public int Year { get; set; }
         public decimal Cost { get; set; }
+        public string Description { get; set; }
         public Transmission? Transmission { get; set; }
         public EnginesType? EnginesType{ get; set; }
         public int? Mileage { get; set; }
