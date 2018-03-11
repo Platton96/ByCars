@@ -12,6 +12,7 @@ namespace WebUI.Models
         public decimal Cost { get; set; }
         public string Description { get; set; }
         public bool NewOffer { get; set; }
+        public bool FavoriteOffer { get; set; }
         public string NameOwner { get; set; }
         public int PhoneNumberOwner { get; set; }
         public string Country { get; set; }
