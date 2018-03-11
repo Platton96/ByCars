@@ -116,6 +116,10 @@
     <Compile Include="Migrations\201803102037198_add Description for car.Designer.cs">
       <DependentUpon>201803102037198_add Description for car.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201803111313231_AddDateOfferForBuyingCar.cs" />
+    <Compile Include="Migrations\201803111313231_AddDateOfferForBuyingCar.Designer.cs">
+      <DependentUpon>201803111313231_AddDateOfferForBuyingCar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -144,6 +148,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201803102037198_add Description for car.resx">
       <DependentUpon>201803102037198_add Description for car.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803111313231_AddDateOfferForBuyingCar.resx">
+      <DependentUpon>201803111313231_AddDateOfferForBuyingCar.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />
