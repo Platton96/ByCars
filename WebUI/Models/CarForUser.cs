@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+using System.ComponentModel.DataAnnotations;
 
 namespace WebUI.Models
 {
@@ -19,5 +17,7 @@ namespace WebUI.Models
         public string Country { get; set; }
         public string Region { get; set; }
         public string District { get; set; }
+        [DataType(DataType.Date)]
+        public DateTime DateOffer { get; set; }
     }
 }

@@ -15,11 +15,34 @@ namespace WebUI.DbProvider
         }
         public IEnumerable<SearchQuery> GetAllSearchQueryUser(IQueryable<SearchQuery> queries)
         {
-            return queries.Where(q => q.ApplicationUser.Id == userId);
+            return queries
+                .Where(q => q.ApplicationUser.Id == userId);
         }
-        //public IEnumerable<CarForUser> GetAllCarForUser(IQueryable<BuyingCar> buyingCars, IQueryable<Car> cars, IQueryable<OwnerCar> owners)
-        //{
+        public IEnumerable<CarForUser> GetAllCarForUser(IQueryable<BuyingCar> buyingCars)
+        {
+            return buyingCars
+                .Where(buyingCar => buyingCar.ApplicationUser.Id == userId)
+                .Select(offer => new CarForUser
+                {
+                    Model = offer.Car.Model,
+                    Brand = offer.Car.Brand,
+                    Cost = offer.Car.Cost,
+                    Year = offer.Car.Year,
+                    UrlImg = offer.Car.UrlImg,
+                    Description = offer.Car.Description,
+                    NameOwner = offer.OwnerCar.Name,
+                    PhoneNumberOwner = offer.OwnerCar.PhoneNumber,
+                    Country = offer.OwnerCar.Country,
+                    District = offer.OwnerCar.District,
+                    Region = offer.OwnerCar.Region,
+                    NewOffer = offer.NewOffer,
+                    DateOffer = offer.DateOffer
 
-        //}
+                }
+                ).OrderByDescending(offer=>offer.NewOffer)
+                 .ThenByDescending(offer=>offer.DateOffer);
+        }
+
+
     }
 }
