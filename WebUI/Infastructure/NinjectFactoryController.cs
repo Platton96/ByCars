@@ -4,7 +4,7 @@ using System.Web.Routing;
 using System.Web.Mvc;
 using Domain.Abstract;
 using Domain.Concrete;
-
+using Domain.Entity;
 
 namespace WebUI.Infastructure
 {
@@ -36,10 +36,10 @@ namespace WebUI.Infastructure
          }.AsQueryable());
              ninjectKernel.Bind<IUserRepository>().ToConstant(mock.Object);*/
             //ninjectKernel.Bind<IUserRepository>().To<EFProductRepository>();
-            ninjectKernel.Bind<ICarRepository>().To<EFCarRepository>();
-            ninjectKernel.Bind<IBuyingCarRepository>().To<EFBuyingCarRepository>();
-            ninjectKernel.Bind<IOwnerCarRepository>().To<EFOwnerCarRepository>();
-            ninjectKernel.Bind<ISearchQueryRepository>().To<EFSearchQueryRepository>();
+            ninjectKernel.Bind<IRepository<Car>>().To<EFRepository<Car>>();
+            ninjectKernel.Bind<IRepository<BuyingCar>>().To<EFRepository <BuyingCar>> ();
+            ninjectKernel.Bind<IRepository<OwnerCar>>().To<EFRepository<OwnerCar>>();
+            ninjectKernel.Bind<IRepository<SearchQuery>>().To<EFRepository<SearchQuery>>();
         }
     }
 }
