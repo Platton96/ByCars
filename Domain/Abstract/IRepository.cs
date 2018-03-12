@@ -8,7 +8,7 @@ namespace Domain.Abstract
 {
     public interface IRepository<TEntity> where TEntity: class
     {
-        IEnumerable<TEntity> GetRepository();
+        IQueryable<TEntity> GetRepository();
         void InsertEntity(TEntity entity);
         void DeleteEntity(TEntity entityToDelte);
         void UpdateEntity(TEntity entityToUpdate);

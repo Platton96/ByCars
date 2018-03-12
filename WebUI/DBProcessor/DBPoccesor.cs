@@ -4,12 +4,12 @@ using System.Linq;
 using Domain.Entity;
 
 
-namespace WebUI.DbProvider
+namespace WebUI.DbProcessor
 {
-    public class DbProvider
+    public class DBPocessor
     {
         private string userId=null;
-        public DbProvider(string id)
+        public DBPocessor(string id)
         {
             userId = id;
         }

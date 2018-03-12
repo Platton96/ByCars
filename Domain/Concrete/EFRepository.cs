@@ -17,9 +17,9 @@ namespace Domain.Concrete
             this.context = context;
             this.dbSet = context.Set<TEntity>();
         }
-        public IEnumerable<TEntity> GetRepository()
+        public IQueryable<TEntity> GetRepository()
         {
-            return dbSet.ToList();
+            return dbSet;
         }
         public void InsertEntity(TEntity entity)
         {
